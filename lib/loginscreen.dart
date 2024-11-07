@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-<<<<<<< HEAD
 import 'package:linkmi2024/apis/apis.dart';
 import 'package:linkmi2024/bienvenidascreen.dart';
 import 'package:linkmi2024/variables/globals.dart';
@@ -10,16 +9,10 @@ class LoginScreen extends StatefulWidget {
 
   @override
   // ignore: library_private_types_in_public_api
-=======
-
-class LoginScreen extends StatefulWidget {
-  @override
->>>>>>> 40a49c2c8d2dacad6791bca80f3c23b81a41b839
   _LoginScreenState createState() => _LoginScreenState();
 }
 
 class _LoginScreenState extends State<LoginScreen> {
-<<<<<<< HEAD
   final TextEditingController _curpController = TextEditingController();
 
   Future<void> _verificarCURP() async {
@@ -49,21 +42,6 @@ class _LoginScreenState extends State<LoginScreen> {
       // ignore: use_build_context_synchronously
       Navigator.of(context).push(
         MaterialPageRoute(builder: (context) => const BienvenidaScreen()),
-=======
-  final _curpController = TextEditingController();
-
-  void _login() {
-    String curp = _curpController.text;
-    // Aquí puedes agregar la lógica para manejar el CURP
-    if (curp.isNotEmpty) {
-      // Simular inicio de sesión o validación del CURP
-      print('CURP ingresado: $curp');
-      // Navegar a la siguiente pantalla si es necesario
-    } else {
-      // Mostrar un mensaje de error si el CURP está vacío
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Por favor ingrese su CURP')),
->>>>>>> 40a49c2c8d2dacad6791bca80f3c23b81a41b839
       );
     }
   }
@@ -71,7 +49,6 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-<<<<<<< HEAD
       body: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
@@ -133,45 +110,8 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
             ),
           ),
-=======
-      appBar: AppBar(
-        title: Text('Iniciar Sesión'),
-      ),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(
-              'Ingrese su CURP para continuar',
-              style: TextStyle(fontSize: 18),
-            ),
-            SizedBox(height: 20),
-            TextField(
-              controller: _curpController,
-              decoration: InputDecoration(
-                border: OutlineInputBorder(),
-                labelText: 'CURP',
-              ),
-            ),
-            SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: _login,
-              child: Text('Iniciar Sesión'),
-            ),
-          ],
->>>>>>> 40a49c2c8d2dacad6791bca80f3c23b81a41b839
         ),
       ),
     );
   }
-<<<<<<< HEAD
-=======
-
-  @override
-  void dispose() {
-    _curpController.dispose();
-    super.dispose();
-  }
->>>>>>> 40a49c2c8d2dacad6791bca80f3c23b81a41b839
 }
