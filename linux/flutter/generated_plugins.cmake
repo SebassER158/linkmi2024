@@ -4,7 +4,10 @@
 
 list(APPEND FLUTTER_PLUGIN_LIST
 <<<<<<< HEAD
+<<<<<<< HEAD
   file_selector_linux
+=======
+>>>>>>> 40a49c2c8d2dacad6791bca80f3c23b81a41b839
 =======
 >>>>>>> 40a49c2c8d2dacad6791bca80f3c23b81a41b839
 )
